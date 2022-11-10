@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/minimalist-portfolio-site/static/css/main.902a6e23.css",
-    "main.js": "/minimalist-portfolio-site/static/js/main.a0bad902.js",
-    "static/js/787.f9202dc0.chunk.js": "/minimalist-portfolio-site/static/js/787.f9202dc0.chunk.js",
-    "static/media/image-homepage-profile@2x.jpg": "/minimalist-portfolio-site/static/media/image-homepage-profile@2x.bd63a80a1022006e670f.jpg",
-    "static/media/image-homepage-hero@2x.jpg": "/minimalist-portfolio-site/static/media/image-homepage-hero@2x.0d83d4b9158321b8d1e2.jpg",
-    "static/media/image-homepage-hero.jpg": "/minimalist-portfolio-site/static/media/image-homepage-hero.18443de6381e746fb91a.jpg",
-    "static/media/image-homepage-profile.jpg": "/minimalist-portfolio-site/static/media/image-homepage-profile.27a4a72c8f4b22430e0c.jpg",
-    "index.html": "/minimalist-portfolio-site/index.html",
-    "main.a0bad902.js.map": "/minimalist-portfolio-site/static/js/main.a0bad902.js.map",
-    "787.f9202dc0.chunk.js.map": "/minimalist-portfolio-site/static/js/787.f9202dc0.chunk.js.map"
+    "main.css": "/static/css/main.902a6e23.css",
+    "main.js": "/static/js/main.dd6f6a80.js",
+    "static/js/787.f9202dc0.chunk.js": "/static/js/787.f9202dc0.chunk.js",
+    "static/media/image-homepage-profile@2x.jpg": "/static/media/image-homepage-profile@2x.bd63a80a1022006e670f.jpg",
+    "static/media/image-homepage-hero@2x.jpg": "/static/media/image-homepage-hero@2x.0d83d4b9158321b8d1e2.jpg",
+    "static/media/image-homepage-hero.jpg": "/static/media/image-homepage-hero.18443de6381e746fb91a.jpg",
+    "static/media/image-homepage-profile.jpg": "/static/media/image-homepage-profile.27a4a72c8f4b22430e0c.jpg",
+    "index.html": "/index.html",
+    "main.dd6f6a80.js.map": "/static/js/main.dd6f6a80.js.map",
+    "787.f9202dc0.chunk.js.map": "/static/js/787.f9202dc0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.902a6e23.css",
-    "static/js/main.a0bad902.js"
+    "static/js/main.dd6f6a80.js"
   ]
 }
