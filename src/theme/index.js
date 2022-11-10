@@ -13,6 +13,13 @@ const theme = extendTheme({
     'dark-blue': "#203A4C",
     'slightly-desaturated-cyan': "#5FB4A2",
   },
+  components: {
+    Button: {
+      baseStyle: {
+        'WebkitTapHighlightColor': 'transparent',
+      }
+    }
+  }
 });
 
 export default theme;

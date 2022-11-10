@@ -1,32 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-import { ChakraProvider, Box } from '@chakra-ui/react'
+import { 
+  ChakraProvider, 
+  Box,
+  Divider,
+} from '@chakra-ui/react';
 import theme from './theme';
 import './theme/styles.css';
+import NavBar from './organisms/NavBar';
+import Hero from './organisms/Hero';
+import AboutMe from './organisms/AboutMe';
+import CallToAction from './organisms/CallToAction';
+import Footer from './organisms/Footer';
 
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box bg='slightly-desaturated-cyan'>
-        <div>This is a test</div>
+      <Box w="clamp(311px, 90%, 1110px)" m="auto" pos='relative'>
+        <NavBar />
+        <Divider />
+        <Hero mb={24} />
+        <AboutMe />
+        <Divider mb={28} />
+        <CallToAction mb={{base: 20, md: 32, lg: 40}}/>
       </Box>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Footer />
     </ChakraProvider>
   );
 }
