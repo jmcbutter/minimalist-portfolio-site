@@ -2,7 +2,7 @@ import {
   Box,
   Flex,
   Stack,
-  Icon
+  Icon,
 } from '@chakra-ui/react';
 
 import logo from '../_images/icons/logo';
@@ -11,7 +11,7 @@ import links from '../_content/links';
 import socialIcons from '../_images/icons/socialIcons';
 
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <Box bg='grayish-dark-blue' color='white'>
       <Flex 
@@ -21,7 +21,7 @@ export default function Footer() {
           md: 'row'
         }} 
         align='center' gap={10} 
-        w="clamp(311px, 90%, 1110px)"
+        w={props.w}
         mx='auto'
       >
         <Icon viewBox={logo.viewBox} w={16} h='auto'>{logo.path}</Icon>
@@ -29,12 +29,15 @@ export default function Footer() {
           spacing='1.5rem' 
           direction={{base: 'column', md: 'row'}}
           flex='1'  
-          textAlign={'center'}>
+          textAlign={'center'}
+        >
           {links.map((link) => (<NavLink key={link}>{link}</NavLink>))}
         </Stack>
         <Stack spacing='1em' direction='row'>
           {socialIcons.map(icon => 
-            <Icon key={icon.name} boxSize='1.5em' viewBox={icon.viewBox}>{icon.path}</Icon>
+            <Icon key={icon.name} boxSize='1.5em' viewBox={icon.viewBox}>
+              {icon.path}
+            </Icon>
           )}
         </Stack>
       </Flex>

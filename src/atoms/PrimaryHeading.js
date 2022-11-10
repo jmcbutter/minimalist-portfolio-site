@@ -4,7 +4,7 @@ import {
 
 export default function PrimaryHeading(props) {
   return (
-    <Heading {...props} size='2xl' letterSpacing='tight'>
+    <Heading {...props} fontSize='4xl' letterSpacing='tight'>
       {props.children}
     </Heading>          
   );

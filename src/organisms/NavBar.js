@@ -17,7 +17,7 @@ export default function NavBar(props) {
 
   return (
     <Box mb={10} mt={8}>
-      <Flex alignItems={'center'} justifyContent={'space-between'}>
+      <Flex alignItems={'center'} justifyContent={'space-between'} w={props.w} mx='auto'>
         <Icon viewBox={logo.viewBox} boxSize='3.5em'>{logo.path}</Icon>
         <HamburgerMenuButton isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
         <HorizontalLinks />
