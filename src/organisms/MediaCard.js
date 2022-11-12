@@ -10,9 +10,14 @@ import {
 import { SecondaryButton } from '../atoms/Buttons';
 import { useBreakpointValue } from '@chakra-ui/react';
 
-import { aboutImage as img } from '../_images/homepage/homepageImages';
+import imgSmall from '../_images/homepage/mobile/image-homepage-profile.jpg';
+import imgSmall2x from '../_images/homepage/mobile/image-homepage-profile@2x.jpg';
+import imgMedium from '../_images/homepage/tablet/image-homepage-profile@2x.jpg';
+import imgMedium2x from '../_images/homepage/tablet/image-homepage-profile@2x.jpg';
+import imgLarge from '../_images/homepage/desktop/image-homepage-profile@2x.jpg';
+import imgLarge2x from '../_images/homepage/desktop/image-homepage-profile@2x.jpg';
 
-export default function AboutMe(props) {
+export default function MediaCard(props) {
   return (
     <Box id='about' {...props} display={{md: 'flex'}} gap='4rem'>
       <ProfileImage maxW={'50%'}/>
@@ -42,11 +47,11 @@ const ProfileImage = (props) => (
   >
     <source srcSet={ImageSrcSets()} />
     <Image
-      src={img.small} 
+      src={imgSmall} 
       mx="auto"
       w='100%'
       h='100%'
-      srcSet={`${img.small} 311w, ${img.small2x} 622w`}
+      srcSet={`${imgSmall} 311w, ${imgSmall2x} 622w`}
       sizes={'(max-width:622px) 311px, 622px'}
       objectFit='cover'
     />
@@ -56,9 +61,9 @@ const ProfileImage = (props) => (
 function ImageSrcSets() {
   return useBreakpointValue(
     {
-      base: `${img.small} 311w, ${img.small2x} 622w`,
-      md: `${img.medium} 281w, ${img.medium2x} 562w`,
-      lg: `${img.large} 540w, ${img.large2x} 1080w`,
+      base: `${imgSmall} 311w, ${imgSmall2x} 622w`,
+      md: `${imgMedium} 281w, ${imgMedium2x} 562w`,
+      lg: `${imgLarge} 540w, ${imgLarge2x} 1080w`,
     }
   )
 }

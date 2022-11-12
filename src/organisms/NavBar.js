@@ -16,8 +16,8 @@ export default function NavBar(props) {
   const {isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box mb={10} mt={8}>
-      <Flex alignItems={'center'} justifyContent={'space-between'} w={props.w} mx='auto'>
+    <Box mb={10} mt={8} position='relative' w={props.w} mx='auto'>
+      <Flex alignItems={'center'} justifyContent={'space-between'}>
         <Icon viewBox={logo.viewBox} boxSize='3.5em'>{logo.path}</Icon>
         <HamburgerMenuButton isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
         <HorizontalLinks />
@@ -31,11 +31,12 @@ const HorizontalLinks = () => (
   <HStack as={'nav'} spacing={4} display={{base: 'none', sm: 'flex'}}>
     {links.map((link) => (
       <NavLink 
-        key={link} 
+        href={link.href}
+        key={link.name} 
         fontSize={'sm'} 
         hoverbg='grayish-dark-blue' hovercolor='very-light-gray'
       >
-        {link}
+        {link.name}
       </NavLink>
     ))}
   </HStack>

@@ -64,7 +64,6 @@ const SecondaryButton = (props) => (
     hoverbg='grayish-dark-blue'
     hovercolor='very-light-gray'
     disabledcolor='light-gray'
-    href={'#'}
   >
     <ButtonText px={8} py={4}>{ props.children }</ButtonText>
   </StandardButton>

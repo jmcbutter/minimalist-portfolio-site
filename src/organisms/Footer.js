@@ -15,7 +15,7 @@ export default function Footer(props) {
   return (
     <Box bg='grayish-dark-blue' color='white'>
       <Flex 
-        py={14}
+        py={{base: 14, md: 6}}
         direction={{
           base: 'column',
           md: 'row'
@@ -31,7 +31,7 @@ export default function Footer(props) {
           flex='1'  
           textAlign={'center'}
         >
-          {links.map((link) => (<NavLink key={link}>{link}</NavLink>))}
+          {links.map((link) => (<NavLink href={link.href} key={link.name}>{link.name}</NavLink>))}
         </Stack>
         <Stack spacing='1em' direction='row'>
           {socialIcons.map(icon => 

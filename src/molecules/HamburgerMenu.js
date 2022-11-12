@@ -33,16 +33,17 @@ const Container = ({children}) => (
 const Links = () => (
   <Stack as={'nav'} spacing={4}>
     {links.map((link) => (
-      <Link>{link}</Link>
+      <Link href={link.href}>{link.name}</Link>
     ))}
   </Stack>
 )
 
-const Link = ({children}) => (
+const Link = (props) => (
   <NavLink 
-    key={children} 
+    href={props.href}
+    key={props.children} 
     hoverbg='light-gray' hovercolor='grayish-dark-blue'
   >
-    {children}
+    {props.children}
   </NavLink>
 )

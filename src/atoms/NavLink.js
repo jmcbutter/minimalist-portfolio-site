@@ -10,7 +10,7 @@ export const NavLink = (props) => (
     _hover={{
       textDecoration: 'none',
       bg: props.hoverbg,
-      color: props.hoverColor,
+      color: props.hovercolor,
     }}
     textTransform='uppercase'
   >
