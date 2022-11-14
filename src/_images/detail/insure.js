@@ -18,24 +18,32 @@ import largePrevBottom from './mobile/image-insure-preview-2.jpg';
 import largePrevBottom2x from './mobile/image-insure-preview-2@2x.jpg';
 
 const image = {
-  smallHero,
-  smallHero2x,
-  smallPrevTop,
-  smallPrevTop2x,
-  smallPrevBottom,
-  smallPrevBottom2x,
-  medHero,
-  medHero2x,
-  medPrevTop,
-  medPrevTop2x,
-  medPrevBottom,
-  medPrevBottom2x,
-  largeHero,
-  largeHero2x,
-  largePrevTop,
-  largePrevTop2x,
-  largePrevBottom,
-  largePrevBottom2x,
+  'hero': {
+    small: smallHero,
+    small2x: smallHero2x,
+    medium: medHero,
+    medium2x: medHero2x,
+    large: largeHero,
+    large2x: largeHero2x,
+  },
+
+  'previewTop': {
+    small: smallPrevTop,
+    small2x: smallPrevTop2x,
+    medium: medPrevTop,
+    medium2x: medPrevTop2x,
+    large: largePrevTop,
+    large2x: largePrevTop2x,
+  },
+
+  'previewBottom': {
+    small: smallPrevBottom,
+    small2x: smallPrevBottom2x,
+    medium: medPrevBottom,
+    medium2x: medPrevBottom2x,
+    large: largePrevBottom,
+    large2x: largePrevBottom2x,
+  }
 }
 
 export default image;

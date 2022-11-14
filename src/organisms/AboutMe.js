@@ -12,6 +12,7 @@ import { useBreakpointValue } from '@chakra-ui/react';
 
 import { aboutImage as img } from '../_images/homepage/homepageImages';
 
+
 export default function AboutMe(props) {
   return (
     <Box id='about' {...props} display={{md: 'flex'}} gap='4rem'>

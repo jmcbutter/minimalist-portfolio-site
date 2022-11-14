@@ -50,6 +50,7 @@ const ButtonText = (props) => (
     letterSpacing="2px"  
     fontSize={12} fontWeight={'normal'} 
     flexGrow={1}
+    textAlign='center'
   >
     { props.children }
   </Text>
