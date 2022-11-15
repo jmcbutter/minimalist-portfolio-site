@@ -3,7 +3,7 @@ import {
 } from '@chakra-ui/react';
 
 import { SecondaryButton } from '../atoms/Buttons';
-import PrimaryHeading from '../atoms/PrimaryHeading';
+import {PrimaryHeading} from '../atoms/PrimaryHeading';
 
 export default function CallToAction(props) {
   return (

@@ -1,5 +1,5 @@
 import { Box, Button, Text, Icon } from "@chakra-ui/react"
-import downArrows from "../_images/icons/down-arrows"
+import downArrows from "../_images/icons/downArrows"
 
 const PrimaryButton = (props) => (
   <StandardButton
