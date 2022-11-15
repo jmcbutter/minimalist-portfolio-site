@@ -35,24 +35,32 @@ export default function Project(props) {
   return (
     <Box w={props.w} m="auto" pos='relative'>
       <HeroImage image={project.detailImages.hero} mb={16}/>
-      <Box mb={20}>
-        <PrimaryHeading mb={6}>
-          {toTitleCase(project.name)}
-        </PrimaryHeading>
-        <Text mb={6}>{project.content}</Text>
-        <Text>{project.tags}</Text>
-        <Text mb={6}>{project.tech}</Text>
-        <SecondaryButton as='a' href={project.liveURL}>
-          View Website
-        </SecondaryButton>
-      </Box>
+      
+      <Box display={{lg: 'flex'}} gap={32}>
+        <Box mb={20} display={{md: 'flex'}}>
+          <Box flex={1}>
+            <PrimaryHeading mb={6}>
+              {toTitleCase(project.name)}
+            </PrimaryHeading>
+            <Text mb={6} display={{md: 'none', lg:'block'}}>{project.content}</Text>
+            <Text>{project.tags}</Text>
+            <Text mb={6}>{project.tech}</Text>
+            <SecondaryButton as='a' href={project.liveURL}>
+              View Website
+            </SecondaryButton>
+          </Box>
+          <Text display={{base: 'none', md: 'block', lg:'none'}} flex={1}>
+            {project.content}
+          </Text>
+        </Box>
 
-      <Box mb={16} >
-        <PrimaryHeading mb={8}>Project Background</PrimaryHeading>
-        <Text mb={10}>{project.background}</Text>
-        <PrimaryHeading mb={10}>Static Previews</PrimaryHeading>
-        <HeroImage image={project.detailImages.previewTop} />
-        <HeroImage image={project.detailImages.previewBottom} />
+        <Box mb={16}>
+          <PrimaryHeading mb={8}>Project Background</PrimaryHeading>
+          <Text mb={10}>{project.background}</Text>
+          <PrimaryHeading mb={10}>Static Previews</PrimaryHeading>
+          <HeroImage image={project.detailImages.previewTop} />
+          <HeroImage image={project.detailImages.previewBottom} />
+        </Box>
       </Box>
 
       <Flex borderTop={'1px solid black'} borderBottom={'1px solid black'}
