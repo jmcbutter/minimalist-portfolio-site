@@ -6,16 +6,16 @@ import smallPrevBottom from './mobile/image-bookmark-preview-2.jpg';
 import smallPrevBottom2x from './mobile/image-bookmark-preview-2@2x.jpg';
 import medHero from './tablet/image-bookmark-hero.jpg';
 import medHero2x from './tablet/image-bookmark-hero@2x.jpg';
-import medPrevTop from './mobile/image-bookmark-preview-1.jpg';
-import medPrevTop2x from './mobile/image-bookmark-preview-1@2x.jpg';
-import medPrevBottom from './mobile/image-bookmark-preview-2.jpg';
-import medPrevBottom2x from './mobile/image-bookmark-preview-2@2x.jpg';
+import medPrevTop from './tablet/image-bookmark-preview-1.jpg';
+import medPrevTop2x from './tablet/image-bookmark-preview-1@2x.jpg';
+import medPrevBottom from './tablet/image-bookmark-preview-2.jpg';
+import medPrevBottom2x from './tablet/image-bookmark-preview-2@2x.jpg';
 import largeHero from './desktop/image-bookmark-hero.jpg';
 import largeHero2x from './desktop/image-bookmark-hero@2x.jpg';
-import largePrevTop from './mobile/image-bookmark-preview-1.jpg';
-import largePrevTop2x from './mobile/image-bookmark-preview-1@2x.jpg';
-import largePrevBottom from './mobile/image-bookmark-preview-2.jpg';
-import largePrevBottom2x from './mobile/image-bookmark-preview-2@2x.jpg';
+import largePrevTop from './desktop/image-bookmark-preview-1.jpg';
+import largePrevTop2x from './desktop/image-bookmark-preview-1@2x.jpg';
+import largePrevBottom from './desktop/image-bookmark-preview-2.jpg';
+import largePrevBottom2x from './desktop/image-bookmark-preview-2@2x.jpg';
 
 const image = {
   'hero': {

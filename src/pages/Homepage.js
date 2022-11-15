@@ -4,7 +4,6 @@ import {
 } from '@chakra-ui/react';
 import '../theme/styles.css';
 import Hero from '../organisms/Hero';
-import AboutMe from '../organisms/AboutMe';
 import CallToAction from '../organisms/CallToAction';
 import MediaCard from '../organisms/MediaCard';
 import aboutInfo from '../_content/aboutInfo';

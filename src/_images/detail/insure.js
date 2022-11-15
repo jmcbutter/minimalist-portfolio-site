@@ -6,16 +6,16 @@ import smallPrevBottom from './mobile/image-insure-preview-2.jpg';
 import smallPrevBottom2x from './mobile/image-insure-preview-2@2x.jpg';
 import medHero from './tablet/image-insure-hero.jpg';
 import medHero2x from './tablet/image-insure-hero@2x.jpg';
-import medPrevTop from './mobile/image-insure-preview-1.jpg';
-import medPrevTop2x from './mobile/image-insure-preview-1@2x.jpg';
-import medPrevBottom from './mobile/image-insure-preview-2.jpg';
-import medPrevBottom2x from './mobile/image-insure-preview-2@2x.jpg';
+import medPrevTop from './tablet/image-insure-preview-1.jpg';
+import medPrevTop2x from './tablet/image-insure-preview-1@2x.jpg';
+import medPrevBottom from './tablet/image-insure-preview-2.jpg';
+import medPrevBottom2x from './tablet/image-insure-preview-2@2x.jpg';
 import largeHero from './desktop/image-insure-hero.jpg';
 import largeHero2x from './desktop/image-insure-hero@2x.jpg';
-import largePrevTop from './mobile/image-insure-preview-1.jpg';
-import largePrevTop2x from './mobile/image-insure-preview-1@2x.jpg';
-import largePrevBottom from './mobile/image-insure-preview-2.jpg';
-import largePrevBottom2x from './mobile/image-insure-preview-2@2x.jpg';
+import largePrevTop from './desktop/image-insure-preview-1.jpg';
+import largePrevTop2x from './desktop/image-insure-preview-1@2x.jpg';
+import largePrevBottom from './desktop/image-insure-preview-2.jpg';
+import largePrevBottom2x from './desktop/image-insure-preview-2@2x.jpg';
 
 const image = {
   'hero': {

@@ -37,7 +37,7 @@ function ImageSrcSets() {
     {
       base: `${img.small} 311w, ${img.small2x} 622w`,
       md: `${img.medium} 311w, ${img.medium2x} 622w`,
-      lg: `${img.large} 311w, ${img.large2x} 622w`,
+      lg: `${img.large} 1110w, ${img.large2x} 2220w`,
     }
   )
 }
