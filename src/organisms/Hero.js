@@ -4,7 +4,7 @@ import {
   Heading,
 } from '@chakra-ui/react';
 
-import { PrimaryButton } from '../atoms/Buttons';
+import PrimaryButton from '../atoms/PrimaryButton';
 import { useBreakpointValue } from '@chakra-ui/react';
 import { heroImage as img } from '../_images/homepage/homepageImages';
 
@@ -64,10 +64,6 @@ const TextBox = ({ children }) => (
     <Heading as='h1' size='2xl' mb={8} letterSpacing='tight'>
       Hey, I’m Jordan Butterfield and I love building beautiful websites
     </Heading>
-    <PrimaryButton onClick={scrollToAbout}>About Me</PrimaryButton>
+    <PrimaryButton href={'#about'}>About Me</PrimaryButton>
   </Box>
 )
-
-function scrollToAbout() {
-  document.getElementById("about").scrollIntoView({behavior: 'smooth'});
-}

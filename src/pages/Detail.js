@@ -9,8 +9,8 @@ import '../theme/styles.css';
 import projectArray from '../_content/projectArray';
 import { useParams } from 'react-router-dom';
 import { useBreakpointValue } from '@chakra-ui/react';
-import {PrimaryHeading, SecondaryHeading} from '../atoms/PrimaryHeading';
-import { SecondaryButton } from '../atoms/Buttons';
+import {H1, H2} from '../atoms/Headings';
+import SecondaryButton from '../atoms/SecondaryButton';
 import arrowLeft from '../_images/icons/arrowLeft';
 import arrowRight from '../_images/icons/arrowRight';
 import CallToAction from '../organisms/CallToAction';
@@ -38,9 +38,9 @@ export default function Detail(props) {
       <Box display={{lg: 'flex'}} gap={32}>
         <Box mb={20} display={{md: 'flex'}}>
           <Box flex={1}>
-            <PrimaryHeading mb={6}>
+            <H1 mb={6}>
               {toTitleCase(project.name)}
-            </PrimaryHeading>
+            </H1>
             <Text mb={6} display={{md: 'none', lg:'block'}}>{project.content}</Text>
             <Text color='slightly-desaturated-cyan'>
               {project.tags}
@@ -57,9 +57,9 @@ export default function Detail(props) {
         </Box>
 
         <Box mb={16} maxW={{md: '55%'}}>
-          <PrimaryHeading mb={8}>Project Background</PrimaryHeading>
+          <H1 mb={8}>Project Background</H1>
           <Text mb={10}>{project.background}</Text>
-          <PrimaryHeading mb={10}>Static Previews</PrimaryHeading>
+          <H1 mb={10}>Static Previews</H1>
           <HeroImage image={project.detailImages.previewTop} />
           <HeroImage image={project.detailImages.previewBottom} />
         </Box>
@@ -83,9 +83,9 @@ export default function Detail(props) {
             {arrowLeft.path}
           </Icon>
           <Box>
-            <SecondaryHeading as='h2'>
+            <H2 as='h2'>
               {toTitleCase(previousProject.name)}
-            </SecondaryHeading>
+            </H2>
             <Text opacity='50%'>Previous Project</Text>
           </Box>
         </Flex>
@@ -106,9 +106,9 @@ export default function Detail(props) {
             {arrowRight.path}
           </Icon>
           <Box>
-            <SecondaryHeading as='h2'>
+            <H2 as='h2'>
               {toTitleCase(nextProject.name)}
-            </SecondaryHeading>
+            </H2>
             <Text opacity='50%'>Next Project</Text>
           </Box>
         </Flex>

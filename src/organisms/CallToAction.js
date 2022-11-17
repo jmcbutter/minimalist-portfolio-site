@@ -2,8 +2,8 @@ import {
   Flex,
 } from '@chakra-ui/react';
 
-import { SecondaryButton } from '../atoms/Buttons';
-import {PrimaryHeading} from '../atoms/PrimaryHeading';
+import SecondaryButton from '../atoms/SecondaryButton';
+import {H1} from '../atoms/Headings';
 
 export default function CallToAction(props) {
   return (
@@ -14,7 +14,7 @@ export default function CallToAction(props) {
       }} 
       justify={'space-between'} align={'center'}
     >
-      <PrimaryHeading 
+      <H1 
         as='h2' 
         textAlign={{
           base: 'center',
@@ -27,7 +27,7 @@ export default function CallToAction(props) {
         mb={{base: 10, md: 0}}
       >
         Interested in doing a project together?
-      </PrimaryHeading>          
+      </H1>          
       <SecondaryButton as='a' href='/contact'>Contact Me</SecondaryButton>
     </Flex>
   );
