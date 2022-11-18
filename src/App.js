@@ -8,6 +8,7 @@ import Homepage from './pages/Homepage';
 import Portfolio from './pages/Portfolio';
 import Detail from "./pages/Detail";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./ScrollToTop";
 
 var contentWidth = 'clamp(311px, 90%, 1110px)'
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <BrowserRouter>
+        <ScrollToTop />
         <NavBar w={contentWidth} />
         <Routes>
           <Route index element={<Homepage w={contentWidth} />} />

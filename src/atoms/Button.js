@@ -3,6 +3,8 @@ import {
   Text as ChakraText, 
 } from "@chakra-ui/react"
 
+import {Link} from 'react-router-dom'
+
 export default function Button(props) {
   const {
     hoverBg, 
@@ -10,6 +12,7 @@ export default function Button(props) {
     disabledBg, 
     disabledColor, 
     children, 
+    href,
     ...restProps} = props
 
   const hoverStyle = {
@@ -24,22 +27,23 @@ export default function Button(props) {
   }
 
   return (
-    <ChakraButton
-      {...restProps}
-      as='a'
-      p='0'
-      borderRadius='0' 
-      textTransform='uppercase'
-      _hover={hoverStyle}
-      _disabled={disabledStyle}
-      sx={{
-        '&:hover *': {
-          color: hoverColor,
-        }
-      }}
-    >
-      <ButtonText>{children}</ButtonText>
-    </ChakraButton>
+    <Link to={href}>
+      <ChakraButton
+        {...restProps}
+        p='0'
+        borderRadius='0' 
+        textTransform='uppercase'
+        _hover={hoverStyle}
+        _disabled={disabledStyle}
+        sx={{
+          '&:hover *': {
+            color: hoverColor,
+          }
+        }}
+      >
+        <ButtonText>{children}</ButtonText>
+      </ChakraButton>
+    </Link>
   )
 }
 
