@@ -6,7 +6,7 @@ import {
 import close from '../_images/icons/close';
 import hamburger from '../_images/icons/hamburger';
 
-export default function NavBar(props) {
+export default function HamburgerMenuButton({isOpen, onClose, onOpen}) {
   return (
     <IconButton 
       display={{sm: 'none'}}
@@ -16,11 +16,11 @@ export default function NavBar(props) {
       bg='inherit'
       _hover={{bg: 'inherit'}}
       _active={{bg:'inherit'}}
-      icon={props.isOpen 
+      icon={isOpen 
         ? <Icon viewBox={close.viewBox}>{close.path}</Icon>
         : <Icon viewBox={hamburger.viewBox}>{hamburger.path}</Icon>
       }
-      onClick={props.isOpen ? props.onClose : props.onOpen} 
+      onClick={isOpen ? onClose : onOpen} 
     />
   )
 }

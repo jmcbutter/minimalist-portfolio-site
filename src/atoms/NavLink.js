@@ -2,18 +2,22 @@ import {
   Link
 } from '@chakra-ui/react';
 
-export const NavLink = (props) => (
-  <Link
-    {...props}
-    px={2}
-    py={1}
-    _hover={{
-      textDecoration: 'none',
-      bg: props.hoverbg,
-      color: props.hovercolor,
-    }}
-    textTransform='uppercase'
-  >
-    {props.children}
-  </Link>
-)
+export default function NavLink(props) {
+  const {hoverBg, hoverColor, children, ...restProps} = props
+  
+  return (
+    <Link
+      {...restProps}
+      px={2}
+      py={1}
+      _hover={{
+        textDecoration: 'none',
+        bg: hoverBg,
+        color: hoverColor,
+      }}
+      textTransform='uppercase'
+    >
+      {children}
+    </Link>
+  )
+}

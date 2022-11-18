@@ -10,7 +10,7 @@ import projectArray from '../_content/projectArray';
 import { useParams } from 'react-router-dom';
 import { useBreakpointValue } from '@chakra-ui/react';
 import {H1, H2} from '../atoms/Headings';
-import SecondaryButton from '../atoms/SecondaryButton';
+import SecondaryButton from '../molecules/SecondaryButton';
 import arrowLeft from '../_images/icons/arrowLeft';
 import arrowRight from '../_images/icons/arrowRight';
 import CallToAction from '../organisms/CallToAction';

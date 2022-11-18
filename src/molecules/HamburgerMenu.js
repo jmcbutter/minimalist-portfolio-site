@@ -1,20 +1,14 @@
 import { 
-  Box, 
-  Stack,
+  Box,
 } from '@chakra-ui/react';
 
-import { NavLink } from '../atoms/NavLink';
-import links from '../_content/links';
+import NavLinkStack from './NavLinkStack';
 
-export default function HamburgerMenu(props) {
-  return props.isOpen ? (
-    <Container>
-      <Links />
-    </Container>
-    ) : null;
+export default function HamburgerMenu({isOpen}) {
+  return isOpen ? (<Menu />) : null;
 }
 
-const Container = ({children}) => (
+const Menu = () => (
   <Box 
     px={16}
     py={10} 
@@ -26,24 +20,9 @@ const Container = ({children}) => (
     color='white'
     textAlign='center'
   >
-    {children}
+    <NavLinkStack 
+      linkHoverBg='light-gray' 
+      linkHoverColor='grayish-dark-blue' 
+    />
   </Box>
-)
-
-const Links = () => (
-  <Stack as={'nav'} spacing={4}>
-    {links.map((link) => (
-      <Link href={link.href}>{link.name}</Link>
-    ))}
-  </Stack>
-)
-
-const Link = (props) => (
-  <NavLink 
-    href={props.href}
-    key={props.children} 
-    hoverbg='light-gray' hovercolor='grayish-dark-blue'
-  >
-    {props.children}
-  </NavLink>
 )

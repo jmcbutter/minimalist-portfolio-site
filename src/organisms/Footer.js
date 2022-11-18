@@ -6,7 +6,7 @@ import {
 } from '@chakra-ui/react';
 
 import logo from '../_images/icons/logo';
-import { NavLink } from '../atoms/NavLink';
+import NavLink from '../atoms/NavLink';
 import links from '../_content/links';
 import socialIcons from '../_images/icons/socialIcons';
 

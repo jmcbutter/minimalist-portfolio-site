@@ -7,7 +7,7 @@ import {
   Flex,
 } from '@chakra-ui/react';
 
-import SecondaryButton from '../atoms/SecondaryButton';
+import SecondaryButton from '../molecules/SecondaryButton';
 import { useBreakpointValue } from '@chakra-ui/react';
 
 export default function MediaCard({ mediaObject, cardDirection, ...props}) {

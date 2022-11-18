@@ -3,7 +3,7 @@ import {
   Text as ChakraText, 
 } from "@chakra-ui/react"
 
-const Button = (props) => {
+export default function Button(props) {
   const {
     hoverBg, 
     hoverColor, 
@@ -55,5 +55,3 @@ const ButtonText = ({children, ...restProps}) => (
     { children }
   </ChakraText>
 )
-
-export default Button

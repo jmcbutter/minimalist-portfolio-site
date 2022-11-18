@@ -4,7 +4,7 @@ import {
   Heading,
 } from '@chakra-ui/react';
 
-import PrimaryButton from '../atoms/PrimaryButton';
+import PrimaryButton from '../molecules/PrimaryButton';
 import { useBreakpointValue } from '@chakra-ui/react';
 import { heroImage as img } from '../_images/homepage/homepageImages';
 

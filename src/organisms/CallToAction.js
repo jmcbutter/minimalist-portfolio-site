@@ -2,7 +2,7 @@ import {
   Flex,
 } from '@chakra-ui/react';
 
-import SecondaryButton from '../atoms/SecondaryButton';
+import SecondaryButton from '../molecules/SecondaryButton';
 import {H1} from '../atoms/Headings';
 
 export default function CallToAction(props) {

@@ -6,7 +6,7 @@ import {
   Icon,
 } from '@chakra-ui/react';
 
-import { NavLink } from '../atoms/NavLink';
+import NavLink from '../atoms/NavLink';
 import links from '../_content/links';
 import logo from '../_images/icons/logo';
 import HamburgerMenuButton from '../molecules/HamburgerMenuButton';
