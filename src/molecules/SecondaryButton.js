@@ -1,8 +1,8 @@
 import Button from "../atoms/Button"
 
-const SecondaryButton = (props) => (
+const SecondaryButton = ({children, ...restProps}) => (
   <Button
-    {...props}
+    {...restProps}
     bg='inherit'
     border={'1px solid currentColor'}
     color='grayish-dark-blue'
@@ -10,7 +10,7 @@ const SecondaryButton = (props) => (
     hoverColor='very-light-gray'
     disabledColor='light-gray'
   >
-    { props.children }
+    { children }
   </Button>
 )
 

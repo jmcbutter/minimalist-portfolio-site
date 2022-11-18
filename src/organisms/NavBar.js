@@ -1,16 +1,13 @@
 import { 
   Box, 
   Flex, 
-  HStack,
   useDisclosure,
-  Icon,
 } from '@chakra-ui/react';
 
-import NavLink from '../atoms/NavLink';
-import links from '../_content/links';
-import logo from '../_images/icons/logo';
+import NavLinkStack from '../molecules/NavLinkStack';
 import HamburgerMenuButton from '../molecules/HamburgerMenuButton';
 import HamburgerMenu from '../molecules/HamburgerMenu';
+import LogoIcon from '../atoms/LogoIcon';
 
 export default function NavBar(props) {
   const {isOpen, onOpen, onClose } = useDisclosure();
@@ -18,26 +15,18 @@ export default function NavBar(props) {
   return (
     <Box mb={10} mt={8} position='relative' w={props.w} mx='auto'>
       <Flex alignItems={'center'} justifyContent={'space-between'}>
-        <Icon viewBox={logo.viewBox} boxSize='3.5em'>{logo.path}</Icon>
+        <LogoIcon boxSize='3.5em' />
         <HamburgerMenuButton isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
-        <HorizontalLinks />
+        <NavLinkStack 
+          direction='row' 
+          linkHoverBg='inherit' 
+          linkHoverColor='slightly-desaturated-cyan' 
+          linkActiveColor='slightly-desaturated-cyan'
+          spacing={4} 
+          display={{base: 'none', sm: 'flex'}}
+        />
       </Flex>
       <HamburgerMenu isOpen={isOpen} />
     </Box>
   )
 }
-
-const HorizontalLinks = () => (
-  <HStack as={'nav'} spacing={4} display={{base: 'none', sm: 'flex'}}>
-    {links.map((link) => (
-      <NavLink 
-        href={link.href}
-        key={link.name} 
-        fontSize={'sm'} 
-        hoverbg='grayish-dark-blue' hovercolor='very-light-gray'
-      >
-        {link.name}
-      </NavLink>
-    ))}
-  </HStack>
-)

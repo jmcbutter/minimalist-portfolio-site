@@ -14,16 +14,16 @@ var contentWidth = 'clamp(311px, 90%, 1110px)'
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <NavBar w={contentWidth} />
       <BrowserRouter>
+        <NavBar w={contentWidth} />
         <Routes>
           <Route index element={<Homepage w={contentWidth} />} />
           <Route path="/portfolio" element={<Portfolio w={contentWidth} />} />
           <Route path="/contact" element={<Contact w={contentWidth} />} />
           <Route path="/project/:projectName" element={<Detail w={contentWidth} />} />
         </Routes>
+        <Footer w={contentWidth} />
       </BrowserRouter>
-      <Footer w={contentWidth} />
     </ChakraProvider>
   );
 }

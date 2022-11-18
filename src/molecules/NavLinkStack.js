@@ -5,19 +5,22 @@ const links = [
   {
     name: 'Home',
     href: '/',
+    key: 'home',
   }, 
   {
     name: 'Portfolio',
     href: '/portfolio',
+    key: 'portfolio',
   },
   {
     name: 'Contact Me',
     href: '/contact',
+    key: 'contact',
   }
 ]
 
 export default function NavLinkStack(props) {
-  const {linkHoverBg, linkHoverColor, ...restProps} = props;
+  const {linkHoverBg, linkHoverColor, linkActiveColor, ...restProps} = props;
 
   return (
     <Stack 
@@ -28,10 +31,11 @@ export default function NavLinkStack(props) {
     >
       {links.map(link => (
         <NavLink 
-          href={link.href}
-          key={link.name}
+          to={link.href}
+          key={link.key}
           hoverBg={linkHoverBg}
           hoverColor={linkHoverColor}
+          activeColor={linkActiveColor}
         >
           {link.name}
         </NavLink>

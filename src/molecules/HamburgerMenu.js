@@ -21,8 +21,9 @@ const Menu = () => (
     textAlign='center'
   >
     <NavLinkStack 
-      linkHoverBg='light-gray' 
-      linkHoverColor='grayish-dark-blue' 
+      linkHoverBg='inherit' 
+      linkHoverColor='slightly-desaturated-cyan' 
+      linkActiveColor='slightly-desaturated-cyan'
     />
   </Box>
 )

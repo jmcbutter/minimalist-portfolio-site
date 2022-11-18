@@ -1,8 +1,7 @@
-import { Box, Icon } from "@chakra-ui/react"
 import Button from "../atoms/Button"
-import downArrows from "../_images/icons/downArrows"
+import DownArrowIcon from "../atoms/DownArrowIcon"
 
-const PrimaryButton = (props) => {
+export default function PrimaryButton(props) {
   const style = {
     w: '200px',
     h: '48px',
@@ -25,25 +24,9 @@ const PrimaryButton = (props) => {
       disabledBg={style.disabledBg}
       color={style.color} 
       hoverColor={style.hoverColor}
-      leftIcon={<DownArrows color={style.iconColor}/>}
+      leftIcon={<DownArrowIcon color={style.iconColor}/>}
     >
       { props.children }
     </Button>
   )
 }
-
-const DownArrows = (props) => (
-  <Box
-    {...props} 
-    bg='rgba(0,0,0,0.1)'
-    display='flex' 
-    alignItems='center' 
-    justifyContent='center' 
-    h='48px' 
-    w='48px'
-  >
-    <Icon viewBox={downArrows.viewBox}>{downArrows.path}</Icon>
-  </Box>
-)
-
-export default PrimaryButton;
