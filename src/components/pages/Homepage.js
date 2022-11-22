@@ -6,7 +6,7 @@ import '../theme/styles.css';
 import Hero from '../organisms/Hero';
 import CallToAction from '../organisms/CallToAction';
 import MediaCard from '../organisms/MediaCard';
-import aboutInfo from '../_content/aboutInfo';
+import aboutInfo from '../../content/aboutInfo';
 
 export default function Homepage(props) {
   return (

@@ -1,4 +1,4 @@
-import { aboutImage } from "../_images/homepage/homepageImages";
+import { aboutImage } from "../images/homepage/homepageImages";
 const aboutInfo = {
     name: 'about',
     portfolioImages: aboutImage,

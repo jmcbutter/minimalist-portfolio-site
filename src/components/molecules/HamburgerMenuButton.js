@@ -4,8 +4,8 @@ import {
 
 import Icon from '../atoms/Icon';
 
-import close from '../_images/icons/close';
-import hamburger from '../_images/icons/hamburger';
+import close from '../../images/icons/close';
+import hamburger from '../../images/icons/hamburger';
 
 export default function HamburgerMenuButton({isOpen, onClose, onOpen}) {
   return (

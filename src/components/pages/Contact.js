@@ -5,7 +5,7 @@ import {
   Icon
 } from '@chakra-ui/react';
 import '../theme/styles.css';
-import socialIcons from '../_images/icons/socialIcons';
+import socialIcons from '../../images/icons/socialIcons';
 import { H1 } from '../atoms/Headings';
 
 

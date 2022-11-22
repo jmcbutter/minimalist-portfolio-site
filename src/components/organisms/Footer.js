@@ -4,7 +4,7 @@ import {
   Icon,
 } from '@chakra-ui/react';
 
-import logo from '../_images/icons/logo';
+import logo from '../../images/icons/logo';
 import SocialIconStack from '../molecules/SocialIconStack';
 import NavLinkStack from '../molecules/NavLinkStack';
 

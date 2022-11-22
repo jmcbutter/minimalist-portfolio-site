@@ -1,5 +1,5 @@
-import detailImages from "../_images/detail/detailImages";
-import portfolioImages from "../_images/portfolio/portfolioImages";
+import detailImages from "../images/detail/detailImages";
+import portfolioImages from "../images/portfolio/portfolioImages";
 
 const projectArray = [
   {

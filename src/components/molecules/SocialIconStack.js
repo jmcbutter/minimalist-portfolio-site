@@ -1,6 +1,6 @@
 import { Stack } from "@chakra-ui/react";
 import {IconButton } from "../atoms/_atoms"
-import socialIcons from "../_images/icons/socialIcons";
+import socialIcons from "../../images/icons/socialIcons";
 
 export default function SocialIconStack(props) {
   return (

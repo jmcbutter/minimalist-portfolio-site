@@ -6,13 +6,13 @@ import {
   Flex
 } from '@chakra-ui/react';
 import '../theme/styles.css';
-import projectArray from '../_content/projectArray';
+import projectArray from '../../content/projectArray';
 import { useParams } from 'react-router-dom';
 import { useBreakpointValue } from '@chakra-ui/react';
 import {H1, H2} from '../atoms/Headings';
 import SecondaryButton from '../molecules/SecondaryButton';
-import arrowLeft from '../_images/icons/arrowLeft';
-import arrowRight from '../_images/icons/arrowRight';
+import arrowLeft from '../../images/icons/arrowLeft';
+import arrowRight from '../../images/icons/arrowRight';
 import CallToAction from '../organisms/CallToAction';
 
 
