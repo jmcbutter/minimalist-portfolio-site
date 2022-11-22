@@ -1,13 +1,14 @@
 import {Routes, Route } from "react-router-dom";
 import { ChakraProvider } from '@chakra-ui/react';
-import theme from './theme';
-import './theme/styles.css';
-import NavBar from './organisms/NavBar';
-import Footer from './organisms/Footer';
-import Homepage from './pages/Homepage';
-import Portfolio from './pages/Portfolio';
-import Detail from "./pages/Detail";
-import Contact from "./pages/Contact";
+import theme from './components/theme/index';
+import './components/theme/styles.css';
+import NavBar from './components/organisms/NavBar';
+import Footer from './components/organisms/Footer';
+import Homepage from './components/pages/Homepage';
+import Portfolio from './components/pages/Portfolio';
+import Detail from "./components/pages/Detail";
+import Contact from "./components/pages/Contact";
+import ScrollToTop from "./ScrollToTop";
 
 var contentWidth = 'clamp(311px, 90%, 1110px)'
 

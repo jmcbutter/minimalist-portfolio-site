@@ -6,7 +6,7 @@ import {
 
 import PrimaryButton from '../molecules/PrimaryButton';
 import { useBreakpointValue } from '@chakra-ui/react';
-import { heroImage as img } from '../images/homepage/homepageImages';
+import { heroImage as img } from '../../images/homepage/homepageImages';
 
 
 export default function Hero(props) {
