@@ -1,10 +1,8 @@
-import { Link } from "react-router-dom"
 import Button from "../atoms/Button"
 
 const SecondaryButton = ({children, href, ...restProps}) => (
   <Button
     {...restProps}
-    as={Link}
     to={href}
     bg='inherit'
     border={'1px solid currentColor'}

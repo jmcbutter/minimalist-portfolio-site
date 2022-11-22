@@ -12,7 +12,7 @@ import { useBreakpointValue } from '@chakra-ui/react';
 
 export default function MediaCard({ mediaObject, cardDirection, ...props}) {
   return (
-    <Box id='about' {...props} 
+    <Box {...props} 
          display={{md: 'flex'}} 
          flexDir={cardDirection === 'ltr' ? 'row' : 'row-reverse'}
          gap='4rem'
@@ -29,7 +29,7 @@ export default function MediaCard({ mediaObject, cardDirection, ...props}) {
         <Text lineHeight={7}>
           {mediaObject.content}
         </Text>
-        <SecondaryButton as='a' maxW={'202px'} href={mediaObject.buttonHref}>
+        <SecondaryButton maxW={'202px'} href={mediaObject.buttonHref}>
           {mediaObject.buttonText}
         </SecondaryButton>
       </Flex>

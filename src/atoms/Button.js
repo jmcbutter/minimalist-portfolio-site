@@ -12,7 +12,7 @@ export default function Button(props) {
     disabledBg, 
     disabledColor, 
     children, 
-    href,
+    to,
     ...restProps} = props
 
   const hoverStyle = {
@@ -27,7 +27,7 @@ export default function Button(props) {
   }
 
   return (
-    <Link to={href}>
+    <Link to={to}>
       <ChakraButton
         {...restProps}
         p='0'

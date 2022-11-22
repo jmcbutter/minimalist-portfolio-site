@@ -64,6 +64,6 @@ const TextBox = ({ children }) => (
     <Heading as='h1' size='2xl' mb={8} letterSpacing='tight'>
       Hey, I’m Jordan Butterfield and I love building beautiful websites
     </Heading>
-    <PrimaryButton href={'#about'}>About Me</PrimaryButton>
+    <PrimaryButton to={'#about'}>About Me</PrimaryButton>
   </Box>
 )
