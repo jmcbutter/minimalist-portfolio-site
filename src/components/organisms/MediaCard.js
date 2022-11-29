@@ -1,68 +1,42 @@
-import {
-  Box,
-  Divider,
-  Image,
-  Heading,
-  Text,
-  Flex,
-} from '@chakra-ui/react';
+import { Box, Divider, Flex } from "@chakra-ui/react";
 
-import SecondaryButton from '../molecules/SecondaryButton';
-import { useBreakpointValue } from '@chakra-ui/react';
+import SecondaryButton from "../molecules/SecondaryButton";
+import Image from "../atoms/Image";
+import { H2, P1 } from "../atoms";
 
-export default function MediaCard({ mediaObject, cardDirection, ...props}) {
+export default function MediaCard({ mediaObject, cardDirection, ...props }) {
+  const { content, buttonHref, buttonText, cardImage } = mediaObject;
+
   return (
-    <Box {...props} 
-         display={{md: 'flex'}} 
-         flexDir={cardDirection === 'ltr' ? 'row' : 'row-reverse'}
-         gap='4rem'
+    <Box
+      {...props}
+      display={{ md: "flex" }}
+      flexDir={cardDirection === "ltr" ? "row" : "row-reverse"}
+      gap="4rem"
     >
-      <MediaImage images={mediaObject.portfolioImages}/>
-      <Divider mb={8} display={{md: 'none'}}/>
-      <Flex
-        w={{base: '100%', md: 'clamp(8em, 100%, 25em)'}} 
-        flexDir='column' justifyContent={'center'} gap={10}
-      >
-        <Heading as='h2' size='2xl' letterSpacing='tight'>
-          {mediaObject.title}
-        </Heading>
-        <Text lineHeight={7}>
-          {mediaObject.content}
-        </Text>
-        <SecondaryButton maxW={'202px'} href={mediaObject.buttonHref}>
-          {mediaObject.buttonText}
-        </SecondaryButton>
+      <Image
+        image={cardImage}
+        mb={{ base: 12, md: 0 }}
+        flex="1 1 auto"
+        maxW={{ md: "50%" }}
+      />
+      <Flex w={{ base: "100%", md: "clamp(8em, 100%, 25em)" }} flexDir="column">
+        <Divider borderColor="black" opacity="0.15" />
+        <Flex
+          flexDir="column"
+          justifyContent={"center"}
+          gap={10}
+          flex="1"
+          my={12}
+        >
+          <H2>{mediaObject.title}</H2>
+          <P1>{content}</P1>
+          <SecondaryButton maxW={"202px"} to={buttonHref}>
+            {buttonText}
+          </SecondaryButton>
+        </Flex>
+        <Divider borderColor="black" opacity="0.15" />
       </Flex>
     </Box>
   );
-}
-
-const MediaImage = ({images}) => (
-  <picture 
-    style={{
-      maxWidth: '50%',
-      flex: '1 1 auto',
-    }}
-  >
-    <source srcSet={ImageSrcSets(images)} />
-    <Image
-      src={images.small} 
-      mx="auto"
-      w='100%'
-      h='100%'
-      srcSet={`${images.small} 311w, ${images.small2x} 622w`}
-      sizes={'(max-width:622px) 311px, 622px'}
-      objectFit='cover'
-    />
-  </picture>
-)
-
-function ImageSrcSets(images) {
-  return useBreakpointValue(
-    {
-      base: `${images.small} 311w, ${images.small2x} 622w`,
-      md: `${images.medium} 281w, ${images.medium2x} 562w`,
-      lg: `${images.large} 540w, ${images.large2x} 1080w`,
-    }
-  )
 }

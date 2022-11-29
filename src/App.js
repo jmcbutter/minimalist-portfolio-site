@@ -15,6 +15,7 @@ var contentWidth = 'clamp(311px, 90%, 1110px)'
 function App() {
   return (
     <ChakraProvider theme={theme}>
+      <ScrollToTop />
       <NavBar w={contentWidth} />
       <Routes>
         <Route index element={<Homepage w={contentWidth} />} />

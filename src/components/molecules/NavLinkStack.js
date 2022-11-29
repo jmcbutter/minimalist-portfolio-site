@@ -1,36 +1,36 @@
-import { Stack, StackDivider } from '@chakra-ui/react';
-import NavLink from '../atoms/NavLink';
+import { Stack, StackDivider } from "@chakra-ui/react";
+import NavLink from "../atoms/NavLink";
 
 const links = [
   {
-    name: 'Home',
-    href: '/',
-    key: 'home',
-  }, 
-  {
-    name: 'Portfolio',
-    href: '/portfolio',
-    key: 'portfolio',
+    name: "Home",
+    href: "/",
+    key: "home",
   },
   {
-    name: 'Contact Me',
-    href: '/contact',
-    key: 'contact',
-  }
-]
+    name: "Portfolio",
+    href: "/portfolio",
+    key: "portfolio",
+  },
+  {
+    name: "Contact Me",
+    href: "/contact",
+    key: "contact",
+  },
+];
 
 export default function NavLinkStack(props) {
-  const {linkHoverBg, linkHoverColor, linkActiveColor, ...restProps} = props;
+  const { linkHoverBg, linkHoverColor, linkActiveColor, ...restProps } = props;
 
   return (
-    <Stack 
-      {...restProps} 
-      as={'nav'} 
+    <Stack
+      {...restProps}
+      as={"nav"}
       spacing={4}
-      divider={props.direction === 'row' ? null : <StackDivider />}
+      divider={props.direction === "row" ? null : <StackDivider />}
     >
-      {links.map(link => (
-        <NavLink 
+      {links.map((link) => (
+        <NavLink
           to={link.href}
           key={link.key}
           hoverBg={linkHoverBg}
@@ -41,5 +41,5 @@ export default function NavLinkStack(props) {
         </NavLink>
       ))}
     </Stack>
-  )
+  );
 }
