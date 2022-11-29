@@ -6,7 +6,8 @@ import HamburgerMenu from "../molecules/HamburgerMenu";
 import LogoIcon from "../atoms/LogoIcon";
 
 export default function NavBar(props) {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const disclosure = useDisclosure();
+  const { isOpen, onOpen, onClose } = disclosure;
 
   return (
     <Box mb={10} mt={8} position="relative" w={props.w} mx="auto">
@@ -26,7 +27,7 @@ export default function NavBar(props) {
           display={{ base: "none", md: "flex" }}
         />
       </Flex>
-      <HamburgerMenu isOpen={isOpen} />
+      <HamburgerMenu isOpen={isOpen} onClick={onClose} />
     </Box>
   );
 }

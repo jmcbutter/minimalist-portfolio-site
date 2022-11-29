@@ -1,8 +1,8 @@
-import { Image as ChakraImage } from "@chakra-ui/react";
+import { Image as ChakraImage, Box } from "@chakra-ui/react";
 
 import { useBreakpointValue } from "@chakra-ui/react";
 
-export default function Image({ image }) {
+export default function Image({ image, ...restProps }) {
   const { small, small2x, medium, medium2x, large, large2x } = image;
   const { smallWidthInPx, mediumWidthInPx, largeWidthInPx } = image;
 
@@ -37,21 +37,18 @@ export default function Image({ image }) {
   });
 
   return (
-    <picture
-      style={{
-        maxWidth: "50%",
-        flex: "1 1 auto",
-      }}
-    >
-      <source srcSet={srcSets} />
-      <ChakraImage
-        mx="auto"
-        w="100%"
-        h="100%"
-        sizes={sizes}
-        objectFit="cover"
-        src={small}
-      />
-    </picture>
+    <Box {...restProps}>
+      <picture>
+        <source srcSet={srcSets} />
+        <ChakraImage
+          mx="auto"
+          w="100%"
+          h="100%"
+          sizes={sizes}
+          objectFit="cover"
+          src={small}
+        />
+      </picture>
+    </Box>
   );
 }

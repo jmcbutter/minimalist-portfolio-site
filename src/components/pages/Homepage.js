@@ -1,6 +1,6 @@
 import { Box, Divider } from "@chakra-ui/react";
 import "../theme/styles.css";
-import Hero from "../organisms/Hero";
+import Hero from "../organisms/HomepageHero";
 import CallToAction from "../organisms/CallToAction";
 import MediaCard from "../organisms/MediaCard";
 import aboutInfo from "../../content/aboutInfo";
