@@ -1,4 +1,4 @@
-import { Box, Divider, Text, Flex } from "@chakra-ui/react";
+import { Box, Divider, Flex } from "@chakra-ui/react";
 
 import SecondaryButton from "../molecules/SecondaryButton";
 import Image from "../atoms/Image";
@@ -31,7 +31,7 @@ export default function MediaCard({ mediaObject, cardDirection, ...props }) {
         >
           <H2>{mediaObject.title}</H2>
           <P1>{content}</P1>
-          <SecondaryButton maxW={"202px"} href={buttonHref}>
+          <SecondaryButton maxW={"202px"} to={buttonHref}>
             {buttonText}
           </SecondaryButton>
         </Flex>

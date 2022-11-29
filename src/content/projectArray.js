@@ -19,7 +19,7 @@ const projectArray = [
   },
   {
     name: "bookmark",
-    detailImage: detailImages.bookmark,
+    detailImages: detailImages.bookmark,
     cardImage: portfolioImages.bookmark,
     title: "Bookmark",
     content:
@@ -34,7 +34,7 @@ const projectArray = [
   },
   {
     name: "insure",
-    detailImage: detailImages.insure,
+    detailImages: detailImages.insure,
     cardImage: portfolioImages.insure,
     title: "Insure",
     content:
@@ -49,9 +49,9 @@ const projectArray = [
   },
   {
     name: "fylo",
-    detailImage: detailImages.fylo,
+    detailImages: detailImages.fylo,
     cardImage: portfolioImages.fylo,
-    title: "Manage",
+    title: "Fylo",
     content:
       "This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
     background:

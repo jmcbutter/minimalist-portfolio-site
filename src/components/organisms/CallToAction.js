@@ -18,7 +18,7 @@ export default function CallToAction(props) {
       >
         Interested in doing a project together?
       </H2>
-      <SecondaryButton href="/contact">Contact Me</SecondaryButton>
+      <SecondaryButton to="/contact">Contact Me</SecondaryButton>
     </Flex>
   );
 }
