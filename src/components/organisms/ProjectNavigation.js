@@ -1,6 +1,6 @@
 import { Box, Text, Icon, Flex } from "@chakra-ui/react";
 import "../theme/styles.css";
-import { H2 } from "../atoms";
+import { H3 } from "../atoms";
 import arrowLeft from "../../images/icons/arrowLeft";
 import arrowRight from "../../images/icons/arrowRight";
 import { Link } from "react-router-dom";
@@ -33,7 +33,7 @@ export default function ProjectNavigation({ projects, project }) {
           {arrowLeft.path}
         </Icon>
         <Box>
-          <H2>{toTitleCase(previous.name)}</H2>
+          <H3>{toTitleCase(previous.name)}</H3>
           <Text opacity="50%">Previous Project</Text>
         </Box>
       </Flex>
@@ -54,7 +54,7 @@ export default function ProjectNavigation({ projects, project }) {
           {arrowRight.path}
         </Icon>
         <Box>
-          <H2>{toTitleCase(next.name)}</H2>
+          <H3>{toTitleCase(next.name)}</H3>
           <Text opacity="50%">Next Project</Text>
         </Box>
       </Flex>

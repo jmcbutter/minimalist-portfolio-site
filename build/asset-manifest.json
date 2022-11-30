@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/minimalist-portfolio-site/static/css/main.902a6e23.css",
-    "main.js": "/minimalist-portfolio-site/static/js/main.4cbe8d81.js",
+    "main.css": "/minimalist-portfolio-site/static/css/main.bee194d9.css",
+    "main.js": "/minimalist-portfolio-site/static/js/main.d7d48e06.js",
     "static/js/787.f9202dc0.chunk.js": "/minimalist-portfolio-site/static/js/787.f9202dc0.chunk.js",
     "static/media/image-insure-hero@2x.jpg": "/minimalist-portfolio-site/static/media/image-insure-hero@2x.4a22d204208c5518c596.jpg",
     "static/media/image-homepage-profile@2x.jpg": "/minimalist-portfolio-site/static/media/image-homepage-profile@2x.bd63a80a1022006e670f.jpg",
@@ -28,6 +28,7 @@
     "static/media/image-fylo-preview-1@2x.jpg": "/minimalist-portfolio-site/static/media/image-fylo-preview-1@2x.06e3fee2c516062d9aba.jpg",
     "static/media/image-portfolio-fylo@2x.jpg": "/minimalist-portfolio-site/static/media/image-portfolio-fylo@2x.d20f38df7ada3293f224.jpg",
     "static/media/image-fylo-preview-2.jpg": "/minimalist-portfolio-site/static/media/image-fylo-preview-2.0d378f23e53b0425b141.jpg",
+    "static/media/image-homepage-profile.jpg": "/minimalist-portfolio-site/static/media/image-homepage-profile.27a4a72c8f4b22430e0c.jpg",
     "static/media/image-bookmark-preview-2.jpg": "/minimalist-portfolio-site/static/media/image-bookmark-preview-2.9e8c76b61fb3a59e4e44.jpg",
     "static/media/image-bookmark-hero.jpg": "/minimalist-portfolio-site/static/media/image-bookmark-hero.818b7024e5a2220127d3.jpg",
     "static/media/image-insure-preview-1.jpg": "/minimalist-portfolio-site/static/media/image-insure-preview-1.82e16e8a59541d49e215.jpg",
@@ -38,13 +39,13 @@
     "static/media/image-bookmark-preview-1.jpg": "/minimalist-portfolio-site/static/media/image-bookmark-preview-1.ce8b64c45469fb810773.jpg",
     "static/media/image-portfolio-fylo.jpg": "/minimalist-portfolio-site/static/media/image-portfolio-fylo.0188e120088570c6c435.jpg",
     "static/media/image-fylo-preview-1.jpg": "/minimalist-portfolio-site/static/media/image-fylo-preview-1.1e386b1eb600b757bc0b.jpg",
-    "static/media/image-homepage-profile.jpg": "/minimalist-portfolio-site/static/media/image-homepage-profile.27a4a72c8f4b22430e0c.jpg",
     "index.html": "/minimalist-portfolio-site/index.html",
-    "main.4cbe8d81.js.map": "/minimalist-portfolio-site/static/js/main.4cbe8d81.js.map",
+    "main.bee194d9.css.map": "/minimalist-portfolio-site/static/css/main.bee194d9.css.map",
+    "main.d7d48e06.js.map": "/minimalist-portfolio-site/static/js/main.d7d48e06.js.map",
     "787.f9202dc0.chunk.js.map": "/minimalist-portfolio-site/static/js/787.f9202dc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.902a6e23.css",
-    "static/js/main.4cbe8d81.js"
+    "static/css/main.bee194d9.css",
+    "static/js/main.d7d48e06.js"
   ]
 }

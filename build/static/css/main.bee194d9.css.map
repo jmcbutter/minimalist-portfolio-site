@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.bee194d9.css","mappings":"oHAEA,MACE,sBACF","sources":["components/theme/styles.css"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap');\n\n:root {\n  scroll-behavior: smooth;\n}"],"names":[],"sourceRoot":""}
