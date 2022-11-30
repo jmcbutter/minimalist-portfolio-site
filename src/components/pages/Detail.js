@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Divider, Text } from "@chakra-ui/react";
 import "../theme/styles.css";
 import projects from "../../content/projectArray";
 import { useParams } from "react-router-dom";
@@ -17,7 +17,7 @@ export default function Detail(props) {
       <Image image={images.hero} mb={16} />
 
       <Box display={{ lg: "flex" }} gap={32}>
-        <Summary project={project} />
+        <Summary project={project} mb={20} />
         <Details project={project} />
       </Box>
 
@@ -27,25 +27,29 @@ export default function Detail(props) {
   );
 }
 
-function Summary({ project }) {
+function Summary({ project, ...restProps }) {
   return (
-    <Box id="summary" mb={20} display={{ md: "flex" }}>
-      <Box flex={1}>
-        <H1 mb={6}>{toTitleCase(project.name)}</H1>
-        <Text mb={6} display={{ md: "none", lg: "block" }}>
+    <Box {...restProps}>
+      <Divider borderColor="black" opacity="0.15" mb={6} />
+      <Box id="summary" mb={6} display={{ md: "flex" }}>
+        <Box flex={1}>
+          <H1 mb={6}>{toTitleCase(project.name)}</H1>
+          <Text mb={6} display={{ md: "none", lg: "block" }}>
+            {project.content}
+          </Text>
+          <Text color="slightly-desaturated-cyan">{project.tags}</Text>
+          <Text mb={6} color="slightly-desaturated-cyan" fontSize={16}>
+            {project.tech}
+          </Text>
+          <SecondaryButton type="external" href={project.liveURL}>
+            View Website
+          </SecondaryButton>
+        </Box>
+        <Text display={{ base: "none", md: "block", lg: "none" }} flex={1}>
           {project.content}
         </Text>
-        <Text color="slightly-desaturated-cyan">{project.tags}</Text>
-        <Text mb={6} color="slightly-desaturated-cyan" fontSize={16}>
-          {project.tech}
-        </Text>
-        <SecondaryButton type="external" href={project.liveURL}>
-          View Website
-        </SecondaryButton>
       </Box>
-      <Text display={{ base: "none", md: "block", lg: "none" }} flex={1}>
-        {project.content}
-      </Text>
+      <Divider borderColor="black" opacity="0.15" />
     </Box>
   );
 }
