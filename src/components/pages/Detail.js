@@ -13,7 +13,7 @@ export default function Detail(props) {
   const images = project.detailImages;
 
   return (
-    <Box w={props.w} m="auto" pos="relative">
+    <Box {...props} mx="auto" pos="relative">
       <Image image={images.hero} mb={16} />
 
       <Box display={{ lg: "flex" }} gap={32}>

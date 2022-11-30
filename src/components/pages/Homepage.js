@@ -7,7 +7,7 @@ import aboutInfo from "../../content/aboutInfo";
 
 export default function Homepage(props) {
   return (
-    <Box w={props.w} m="auto" pos="relative">
+    <Box {...props} mx="auto" pos="relative">
       <Hero mb={24} />
       <MediaCard
         id="about"

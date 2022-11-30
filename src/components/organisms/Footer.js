@@ -4,15 +4,15 @@ import LogoIcon from "../atoms/LogoIcon";
 import SocialIconStack from "../molecules/SocialIconStack";
 import NavLinkStack from "../molecules/NavLinkStack";
 
-export default function Footer(props) {
+export default function Footer({ w, ...restProps }) {
   return (
-    <Box bg="grayish-dark-blue" color="white">
+    <Box {...restProps} bg="grayish-dark-blue" color="white">
       <Flex
         py={{ base: 14, md: 6 }}
         direction={{ base: "column", md: "row" }}
         align="center"
         gap={10}
-        w={props.w}
+        w={w}
         mx="auto"
       >
         <LogoIcon boxSize="3.5em" />
