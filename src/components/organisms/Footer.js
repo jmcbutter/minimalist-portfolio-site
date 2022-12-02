@@ -6,7 +6,7 @@ import NavLinkStack from "../molecules/NavLinkStack";
 
 export default function Footer({ w, ...restProps }) {
   return (
-    <Box {...restProps} bg="grayish-dark-blue" color="white">
+    <Box {...restProps} bg="grayish-dark-blue" color="white" overflow="hidden">
       <Flex
         py={{ base: 14, md: 6 }}
         direction={{ base: "column", md: "row" }}
@@ -15,7 +15,7 @@ export default function Footer({ w, ...restProps }) {
         w={w}
         mx="auto"
       >
-        <LogoIcon boxSize="3.5em" />
+        <LogoIcon boxSize={"8rem"} />
         <NavLinkStack
           direction={{ base: "column", md: "row" }}
           textAlign="center"

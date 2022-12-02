@@ -12,7 +12,7 @@ export default function NavBar(props) {
   return (
     <Box mb={10} mt={8} position="relative" w={props.w} mx="auto">
       <Flex alignItems={"center"} justifyContent={"space-between"}>
-        <LogoIcon boxSize="3.5em" />
+        <LogoIcon boxSize="8em" cursor="pointer" type="internal" to="/" />
         <HamburgerMenuButton
           isOpen={isOpen}
           onOpen={onOpen}

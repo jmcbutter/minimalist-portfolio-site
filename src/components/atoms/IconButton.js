@@ -1,22 +1,35 @@
 import { IconButton as ChakraIconButton } from "@chakra-ui/react";
-import Icon from './Icon'
+import { Link as ChakraLink } from "@chakra-ui/react";
+import { Link as ReactLink } from "react-router-dom";
+import Icon from "./Icon";
 
-export default function IconButton({iconObject, boxSize, ...restProps}) {
-  const {name, href} = iconObject
+export default function IconButton(props) {
+  const { iconObject, boxSize, type, ...restProps } = props;
+  const { name, href } = iconObject;
 
   return (
     <ChakraIconButton
       {...restProps}
-      as='a'
+      as={Link(type)}
       key={name}
+      to={href}
       href={href}
-      bg='inherit'
+      bg="inherit"
       borderRadius={0}
       _hover={{
-        bg: 'inherit',
-        color: 'slightly-desaturated-cyan'
+        bg: "inherit",
+        color: "slightly-desaturated-cyan",
       }}
-      icon={(<Icon boxSize={boxSize} iconObject={iconObject} />)}
+      icon={<Icon boxSize={boxSize} iconObject={iconObject} />}
     />
-  )
+  );
+}
+
+function Link(type) {
+  switch (type) {
+    case "external":
+      return ChakraLink;
+    default:
+      return ReactLink;
+  }
 }
