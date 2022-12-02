@@ -4,6 +4,8 @@ import PrimaryButton from "../molecules/PrimaryButton";
 import Image from "../atoms/Image";
 import { H1 } from "../atoms/Headings";
 import { heroImage as img } from "../../images/homepage/homepageImages";
+import LinkButton from "../molecules/LinkButton";
+import DownArrowIcon from "../atoms/DownArrowIcon";
 
 export default function HomepageHero(props) {
   return (
@@ -34,6 +36,15 @@ const TextBox = ({ children }) => (
     }}
   >
     <H1 mb={8}>Hey, I’m Alex Spencer and I love building beautiful websites</H1>
-    <PrimaryButton to={"#about"}>About Me</PrimaryButton>
+    <LinkButton
+      to={"#about"}
+      button={
+        <PrimaryButton
+          leftIcon={<DownArrowIcon color={"slightly-desaturated-cyan"} />}
+        >
+          About Me
+        </PrimaryButton>
+      }
+    />
   </Box>
 );

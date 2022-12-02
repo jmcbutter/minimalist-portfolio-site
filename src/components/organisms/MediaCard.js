@@ -3,6 +3,7 @@ import { Box, Divider, Flex } from "@chakra-ui/react";
 import SecondaryButton from "../molecules/SecondaryButton";
 import Image from "../atoms/Image";
 import { H2, P1 } from "../atoms";
+import LinkButton from "../molecules/LinkButton";
 
 export default function MediaCard({ mediaObject, cardDirection, ...props }) {
   const { content, buttonHref, buttonText, cardImage } = mediaObject;
@@ -31,9 +32,12 @@ export default function MediaCard({ mediaObject, cardDirection, ...props }) {
         >
           <H2>{mediaObject.title}</H2>
           <P1>{content}</P1>
-          <SecondaryButton maxW={"202px"} to={buttonHref}>
-            {buttonText}
-          </SecondaryButton>
+          <LinkButton
+            to={buttonHref}
+            button={
+              <SecondaryButton maxW={"202px"}>{buttonText}</SecondaryButton>
+            }
+          />
         </Flex>
         <Divider borderColor="black" opacity="0.15" />
       </Flex>

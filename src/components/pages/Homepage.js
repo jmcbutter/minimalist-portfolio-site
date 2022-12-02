@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import "../theme/styles.css";
-import Hero from "../organisms/HomepageHero";
+import HomepageHero from "../organisms/HomepageHero";
 import CallToAction from "../organisms/CallToAction";
 import MediaCard from "../organisms/MediaCard";
 import aboutInfo from "../../content/aboutInfo";
@@ -8,7 +8,7 @@ import aboutInfo from "../../content/aboutInfo";
 export default function Homepage(props) {
   return (
     <Box {...props} mx="auto" pos="relative">
-      <Hero mb={24} />
+      <HomepageHero mb={24} />
       <MediaCard
         id="about"
         mediaObject={aboutInfo}
