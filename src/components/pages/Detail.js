@@ -6,6 +6,7 @@ import { H1, Image } from "../atoms";
 import SecondaryButton from "../molecules/SecondaryButton";
 import CallToAction from "../organisms/CallToAction";
 import ProjectNavigation from "../organisms/ProjectNavigation";
+import LinkButton from "../molecules/LinkButton";
 
 export default function Detail(props) {
   const { projectName } = useParams();
@@ -41,9 +42,11 @@ function Summary({ project, ...restProps }) {
           <Text mb={6} color="slightly-desaturated-cyan" fontSize={16}>
             {project.tech}
           </Text>
-          <SecondaryButton type="external" href={project.liveURL}>
-            View Website
-          </SecondaryButton>
+          <LinkButton
+            type="external"
+            href={project.liveURL}
+            button={<SecondaryButton>View Website</SecondaryButton>}
+          />
         </Box>
         <Text display={{ base: "none", md: "block", lg: "none" }} flex={1}>
           {project.content}

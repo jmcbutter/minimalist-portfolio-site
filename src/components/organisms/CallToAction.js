@@ -2,6 +2,7 @@ import { Flex } from "@chakra-ui/react";
 
 import SecondaryButton from "../molecules/SecondaryButton";
 import { H2 } from "../atoms/Headings";
+import LinkButton from "../molecules/LinkButton";
 
 export default function CallToAction(props) {
   return (
@@ -18,7 +19,10 @@ export default function CallToAction(props) {
       >
         Interested in doing a project together?
       </H2>
-      <SecondaryButton to="/contact">Contact Me</SecondaryButton>
+      <LinkButton
+        to="/contact"
+        button={<SecondaryButton>Contact Me</SecondaryButton>}
+      />
     </Flex>
   );
 }
