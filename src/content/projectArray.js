@@ -4,7 +4,7 @@ import portfolioImages from "../images/portfolio/portfolioImages";
 const projectArray = [
   {
     name: "calculator",
-    detailImages: detailImages.manage,
+    detailImages: detailImages.calculator,
     cardImage: portfolioImages.calculator,
     title: "Calculator",
     content:
@@ -19,7 +19,7 @@ const projectArray = [
   },
   {
     name: "github",
-    detailImages: detailImages.bookmark,
+    detailImages: detailImages.github,
     cardImage: portfolioImages.github,
     title: "Github User Search",
     content:
@@ -34,7 +34,7 @@ const projectArray = [
   },
   {
     name: "pod",
-    detailImages: detailImages.insure,
+    detailImages: detailImages.pod,
     cardImage: portfolioImages.pod,
     title: "Pod Landing Page",
     content:

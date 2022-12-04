@@ -19,7 +19,7 @@ export default function HomepageHero(props) {
 const TextBox = ({ children }) => (
   <Box
     w={{
-      base: "max(30ch, 75%)",
+      base: "max(25ch, 75%)",
       md: "520px",
       lg: "445px",
     }}
@@ -35,7 +35,7 @@ const TextBox = ({ children }) => (
       md: "3.5rem 3.5rem 0 0em",
     }}
   >
-    <H1 mb={8}>Hey, I’m Jordan, and I build websites.</H1>
+    <H1 mb={8}>Hi, I’m Jordan. I'm a front-end developer.</H1>
     <LinkButton
       to={"#about"}
       button={
