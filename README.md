@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Frontend Mentor - Minimalist portfolio website solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Minimalist portfolio website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+## Overview
 
-### `npm start`
+### The challenge
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Users should be able to:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+- Click the "About Me" call-to-action on the homepage and have the screen scroll down to the next section
+- Receive an error message when the contact form is submitted if:
+  - The `Name`, `Email Address` or `Message` fields are empty should show "This field is required"
+  - The `Email Address` is not formatted correctly should show "Please use a valid email address"
 
-### `npm test`
+### Screenshot
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![screenshot](./preview.jpg)
 
-### `npm run build`
+### Links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Solution URL: [Github Repo](https://github.com/jmcbutter/minimalist-portfolio-site/tree/solution)
+- Live Site URL: [Github Pages](https://jmcbutter.github.io/minimalist-portfolio-site/#/portfolio)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## My process
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built with
 
-### `npm run eject`
+- Semantic HTML5 markup
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Chakra UI](https://chakra-ui.com/) - React component library
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### What I learned
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project was the first project I built using React. While building it, I was able to get experience with using hooks to manage state, experience with using router to handle links, and plenty of experience using props and destructuring thanks to Chakra UI (styling was performed by passing styles to Chakra components via props).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+One unique challenge I ran into was dealing with so many images to handle art direction and resolution switching. I was able to eventually handle this by tweaking the Chakra image component to switch sources at breakpoints using Chakra's ```useBreakpointValue()``` hook.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Continued development
 
-## Learn More
+I will continue focusing on building projects using React, and will also focus on creating clean React code. I am also personalizing this project to use as my own portfolio page for the time being, as it provides a clean layout with an emphasis on projects.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Website - [Jordan Butterfield](https://jmbutterfield.com)
+- Github - [@jmcbutter](https://github.com/jmcbutter)
+- Frontend Mentor - [@jmcbutter](https://www.frontendmentor.io/profile/jmcbutter)
+- LinkedIn - [Jordan Butterfield](https://www.linkedin.com/in/jordan-butterfield-933274a9/)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
