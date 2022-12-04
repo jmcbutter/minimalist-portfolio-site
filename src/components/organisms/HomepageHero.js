@@ -35,7 +35,7 @@ const TextBox = ({ children }) => (
       md: "3.5rem 3.5rem 0 0em",
     }}
   >
-    <H1 mb={8}>Hey, I’m Alex Spencer and I love building beautiful websites</H1>
+    <H1 mb={8}>Hey, I’m Jordan, and I build websites.</H1>
     <LinkButton
       to={"#about"}
       button={

@@ -1,13 +1,11 @@
-import bookmark from "./bookmark";
-import fylo from "./fylo";
-import insure from "./insure";
-import manage from "./manage";
+import calculator from "./calculator";
+import github from "./github";
+import pod from "./pod";
 
 const portfolioImages = {
-  bookmark,
-  fylo,
-  insure,
-  manage,
+  calculator,
+  github,
+  pod
 }
 
 export default portfolioImages;
