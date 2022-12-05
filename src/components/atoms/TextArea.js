@@ -8,7 +8,7 @@ import {
 import { useState } from "react";
 
 export default function TextArea(props) {
-  const { label, placeholder, isRequired, ...restProps } = props;
+  const { label, placeholder, isRequired, name, ...restProps } = props;
 
   const [input, setInput] = useState("");
   const [isUpdated, setIsUpdated] = useState(false);
@@ -33,6 +33,7 @@ export default function TextArea(props) {
       <FormLabel>{label}</FormLabel>
       <ChakraTextArea
         value={input}
+        name={name}
         onChange={handleInputChange}
         onFocus={handleFocus}
         onBlur={handleBlur}

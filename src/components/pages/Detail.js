@@ -44,6 +44,13 @@ function Summary({ project, ...restProps }) {
           </Text>
           <LinkButton
             type="external"
+            display="block"
+            mb={2}
+            href={project.repoURL}
+            button={<SecondaryButton>View Code</SecondaryButton>}
+          />
+          <LinkButton
+            type="external"
             href={project.liveURL}
             button={<SecondaryButton>View Website</SecondaryButton>}
           />
@@ -63,7 +70,11 @@ function Details({ project }) {
   return (
     <Box id="details" mb={16} maxW={{ lg: "55%" }}>
       <H1 mb={8}>Project Background</H1>
-      <Text mb={10}>{project.background}</Text>
+      <Box mb={10}>
+        {project.background.map((p) => (
+          <Text mb={4}>{p}</Text>
+        ))}
+      </Box>
       <H1 mb={10}>Static Previews</H1>
       <Image image={images.previewTop} mb={8} />
       <Image image={images.previewBottom} />

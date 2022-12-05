@@ -27,6 +27,7 @@ export default function Button(props) {
   return (
     <ChakraButton
       {...restProps}
+      type={type}
       p="0"
       borderRadius="0"
       textTransform="uppercase"
@@ -35,6 +36,9 @@ export default function Button(props) {
       sx={{
         "&:hover *": {
           color: hoverColor,
+        },
+        "& > *": {
+          margin: 0,
         },
       }}
     >

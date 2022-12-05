@@ -15,6 +15,7 @@ export default function TextInput(props) {
     isRequired,
     pattern,
     formatPrompt,
+    name,
     ...restProps
   } = props;
 
@@ -49,6 +50,7 @@ export default function TextInput(props) {
       <Input
         type={type}
         value={input}
+        name={name}
         onChange={handleInputChange}
         onFocus={handleFocus}
         onBlur={handleBlur}
