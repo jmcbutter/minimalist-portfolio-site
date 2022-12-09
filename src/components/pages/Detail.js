@@ -34,7 +34,7 @@ function Summary({ project, ...restProps }) {
       <Divider borderColor="black" opacity="0.15" mb={6} />
       <Box id="summary" mb={6} display={{ md: "flex" }}>
         <Box flex={1}>
-          <H1 mb={6}>{toTitleCase(project.name)}</H1>
+          <H1 mb={6}>{project.title}</H1>
           <Text mb={6} display={{ md: "none", lg: "block" }}>
             {project.content}
           </Text>
@@ -80,8 +80,4 @@ function Details({ project }) {
       <Image image={images.previewBottom} />
     </Box>
   );
-}
-
-function toTitleCase(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
 }

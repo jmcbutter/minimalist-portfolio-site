@@ -3,6 +3,24 @@ import portfolioImages from "../images/portfolio/portfolioImages";
 
 const projectArray = [
   {
+    name: "tic-tac-toe",
+    detailImages: detailImages.tictactoe,
+    cardImage: portfolioImages.tictactoe,
+    title: "Tic Tac Toe",
+    content:
+      "This project required me to build an interactive tic tac toe game. I used HTML and CSS/SASS in React.js for the design. React was also used to manage the state of the game, and display prompts whenever somebody won.",
+    background: [
+      "This project allowed me to get substantial experience using React and React Hooks such as useState and useEffect. Managing the state and the rendering became more difficult the further I got into the project, simply due to the number of branching conditionals needed to display things correctly. Due to this, I created unit tests for some functions using Jest to help cover the different branches.",
+      "This was a front-end  challenge from Frontend Mentor, which is a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. These projects provide a way for me to focus purely on code rather than on how I want a website to look.",
+    ],
+    buttonText: "View Project",
+    buttonHref: "/project/tic-tac-toe",
+    tags: "Interaction Design / Front End Development",
+    tech: "HTML / CSS / SASS / JS / React",
+    liveURL: "https://jmcbutter.github.io/tic-tac-toe/",
+    repoURL: "https://github.com/jmcbutter/tic-tac-toe",
+  },
+  {
     name: "calculator",
     detailImages: detailImages.calculator,
     cardImage: portfolioImages.calculator,

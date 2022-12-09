@@ -33,7 +33,7 @@ export default function ProjectNavigation({ projects, project }) {
           {arrowLeft.path}
         </Icon>
         <Box>
-          <H3>{toTitleCase(previous.name)}</H3>
+          <H3>{previous.title}</H3>
           <Text opacity="50%">Previous Project</Text>
         </Box>
       </Flex>
@@ -54,14 +54,10 @@ export default function ProjectNavigation({ projects, project }) {
           {arrowRight.path}
         </Icon>
         <Box>
-          <H3>{toTitleCase(next.name)}</H3>
+          <H3>{next.title}</H3>
           <Text opacity="50%">Next Project</Text>
         </Box>
       </Flex>
     </Flex>
   );
-}
-
-function toTitleCase(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
 }
