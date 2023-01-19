@@ -11,6 +11,8 @@ export default function IconButton(props) {
     <ChakraIconButton
       {...restProps}
       as={Link(type)}
+      target={type === "external" ? "_blank" : ""}
+      rel="noreferrer noopener"
       key={name}
       to={href}
       href={href}

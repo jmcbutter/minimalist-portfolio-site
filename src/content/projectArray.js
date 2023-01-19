@@ -3,6 +3,42 @@ import portfolioImages from "../images/portfolio/portfolioImages";
 
 const projectArray = [
   {
+    name: "rock-paper-scissors",
+    detailImages: detailImages.rps,
+    cardImage: portfolioImages.rps,
+    title: "Rock, Paper, Scissors, Lizard, Spock",
+    content:
+      "This project required me to build a rock, paper, scissors, lizard, spock game versus the computer. I used HTML and Chakra UI in React.js for the design. React was also used to manage state and determine the winner of the game and update the display appropriately.",
+    background: [
+      "This project helped me become more familiar with Chakra UI and required a bit more CSS manipulation than previous projects, especially to get the design and layout of the buttons correct. At this point, I feel very comfortable in React, and am confident in my abilities to manage state, even through callback functions passed as props to React elements.",
+      "This was a front-end  challenge from Frontend Mentor, which is a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. These projects provide a way for me to focus purely on code rather than on how I want a website to look.",
+    ],
+    buttonText: "View Project",
+    buttonHref: "/project/rock-paper-scissors",
+    tags: "Interaction Design / Front End Development",
+    tech: "HTML / CSS / JS / React",
+    liveURL: "https://jmcbutter.github.io/rock-paper-scissors/",
+    repoURL: "https://github.com/jmcbutter/rock-paper-scissors",
+  },
+  {
+    name: "to-do",
+    detailImages: detailImages.todo,
+    cardImage: portfolioImages.todo,
+    title: "To Do",
+    content:
+      "This project required me to build an interactive to-do application. I used HTML and CSS/SASS in React.js for the design. React was also used to manage the state of the task list, and to sort and filter the tasks.",
+    background: [
+      "This project allowed me to get more experience using functional components in React, and React Hooks. Building the drag and drop functionality was trickier than I expected, but I was able to get it done using dropzone divs and reordering the task array on dropping the dragged task. This project uses localStorage to remember tasks, and is the first project I've uploaded to Firebase.",
+      "This was a front-end  challenge from Frontend Mentor, which is a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. These projects provide a way for me to focus purely on code rather than on how I want a website to look.",
+    ],
+    buttonText: "View Project",
+    buttonHref: "/project/to-do",
+    tags: "Interaction Design / Front End Development",
+    tech: "HTML / CSS / SASS / JS / React",
+    liveURL: "https://to-do-app-a280d.web.app/",
+    repoURL: "https://github.com/jmcbutter/to-do-app",
+  },
+  {
     name: "tic-tac-toe",
     detailImages: detailImages.tictactoe,
     cardImage: portfolioImages.tictactoe,
